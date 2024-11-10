@@ -1,0 +1,105 @@
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+
+h3, {
+    background-color: rgba(66, 51, 68, 0.222); /* Cor de fundo com transparência */
+    color: rgb(8, 8, 8);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgb(15, 14, 14); /* Sombra para o título */
+}
+
+
+header {
+    background-color: rgba(79, 122, 171, 0.673);
+    color: #040404;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgb(0, 0, 0); /* Sombra para o cabeçalho */
+}
+
+.sobre-mim {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.sobre-mim-texto {
+    flex: 1;
+    padding-right: 1px;
+}
+
+
+.galeria {
+    max-width: 800px; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.galeria li {
+    margin: 10px;
+}
+
+
+footer {
+    background-color: rgba(79, 122, 171, 0.673);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.carousel {
+    position: relative;
+    width: 800%;
+    max-width: 600px; 
+    margin: 0 auto;
+    overflow: hidden;
+}
+.carousel-images {
+    display: flex;     
+    transition: transform 0.5s ease-in-out; }
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+
+.carousel-slide {
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2em;
+    transform: translateY(-50%);
+}
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
+}
